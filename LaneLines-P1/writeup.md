@@ -8,7 +8,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./test_images_output/solidWhiteCurve.jpg "First Pass"
-[image2]: ./test_images_output_better/solidWhiteCurve.jpg "Second Pass"
+[image2]: ./test_images_better_output/solidWhiteCurve.jpg "Second Pass"
 
 ---
 
