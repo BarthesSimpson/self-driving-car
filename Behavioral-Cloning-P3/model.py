@@ -60,13 +60,6 @@ model.summary()
 model.compile(optimizer=Adam(0.0001), loss="mse")
 
 # training and validation
-def split(csv, val_split):
-	shuffled = csv.iloc[np.random.permutation(len(csv))]
-	validation_samples = int(len(csv) * val_split)
-	return (shuffled[validation_samples:],
-				shuffled[:validation_samples])
-
-# Split samples into training and validation
 data = pd.read_csv('./data/driving_log.csv')
 number_of_validation_samples = len(data) * 0.3
 train_gen = utils.generate_next_batch()
@@ -76,7 +69,7 @@ history = model.fit_generator(train_gen,
                               samples_per_epoch=20032,
                               nb_epoch=8,
                               validation_data=validation_gen,
-                              nb_val_samples=validation_set_size,
+                              nb_val_samples=number_of_validation_samples,
                               verbose=1)
 
 # save model
