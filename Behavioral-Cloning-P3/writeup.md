@@ -23,7 +23,7 @@ My preprocessing steps include cropping the image to an area of interest (basica
 #### Flipped Image
 ![Flipped Image](img/flipped.png "Flipped Image")
 #### Gamma Adjusted Image
-![Gamma Adjusted Image](img/gamma.png "Gamma Adjusted Image")
+![Gamma Adjusted Image](img/gamma2.png "Gamma Adjusted Image")
 #### Fully Augmented Image
 ![Fully Augmented Image](img/random.png "Fully Augmented Image")
 
