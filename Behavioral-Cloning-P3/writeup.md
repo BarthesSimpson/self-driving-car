@@ -18,6 +18,8 @@ To generate a new image from an existing training image, I simulate a random coi
 
 My preprocessing steps include cropping the image to an area of interest (basically removing the top third of the screen which is irrelevant scenery and also the bottom 10% which is occluded by the front of the car). I also resize my images to 64x64 which is the input size for the NVIDIA CNN.
 
+![original](img/left_2016_12_01_13_39_25_398.jpg, "Original Image")
+
 ### Model architecture
 
 (My implementation of) the NVIDIA end-to-end CNN is pretty simple. It has 5 convolutional layers of increasing depth. After that, the output is flattened, and then run through 5 fully connected layers of decreasing size. The final layer ouputs just a single number, the steering angle.
@@ -25,3 +27,7 @@ My preprocessing steps include cropping the image to an area of interest (basica
 The network is reminiscent of LeNet, but with more convolutional layers and more fully connected layers.
 
 I use relu activations throughout, and apply max pooling on the output of each convolutional layer. I use a mean squared error loss function (which is appropriate for a logistic output like this one). The optimizer is Adam.
+
+### Results
+
+[Here is a video](https://youtu.be/Q3zMjvGSEHU) of the car successfully navigating the first track. 
