@@ -16,10 +16,15 @@ To generate a new image from an existing training image, I simulate a random coi
 
 My preprocessing steps include cropping the image to an area of interest (basically removing the top third of the screen which is irrelevant scenery and also the bottom 10% which is occluded by the front of the car). I also resize my images to 64x64 which is the input size for the NVIDIA CNN.
 
+#### Original Image
 ![Original Image](img/left_2016_12_01_13_39_25_398.jpg "Original Image")
+#### Cropped Image
 ![Cropped Image](img/cropped.png "Cropped Image")
+#### Flipped Image
 ![Flipped Image](img/flipped.png "Flipped Image")
+#### Gamma Adjusted Image
 ![Gamma Adjusted Image](img/gamma.png "Gamma Adjusted Image")
+#### Fully Augmented Image
 ![Fully Augmented Image](img/gamma.png "Fully Augmented Image")
 
 ### Model architecture
