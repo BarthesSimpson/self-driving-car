@@ -1,5 +1,3 @@
-https://medium.com/@ksakmann/behavioral-cloning-make-a-car-drive-like-yourself-dc6021152713
-
 # **Behavioral Cloning** 
 
 ### Solution design
