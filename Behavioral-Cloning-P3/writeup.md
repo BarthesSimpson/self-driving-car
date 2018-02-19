@@ -25,7 +25,7 @@ My preprocessing steps include cropping the image to an area of interest (basica
 #### Gamma Adjusted Image
 ![Gamma Adjusted Image](img/gamma.png "Gamma Adjusted Image")
 #### Fully Augmented Image
-![Fully Augmented Image](img/gamma.png "Fully Augmented Image")
+![Fully Augmented Image](img/random.png "Fully Augmented Image")
 
 ### Model architecture
 
